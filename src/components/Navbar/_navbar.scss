@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 6rem;
+  background-color: #973737;
+  padding: 0.5rem 12rem;
 
   /* Navbar links */
   .navbar-links {
@@ -17,8 +18,8 @@
       margin-right: 2rem;
 
       .logo-navbar {
-        width: 85px;
-        height: 55px;
+        width: 100px;
+        height: 75px;
       }
     }
 
@@ -31,6 +32,8 @@
       /* Navigation */
       .navigation {
         display: flex;
+        font-size: 22px;
+        color: #fff;
         gap: 40px;
         margin-right: 120px;
       }

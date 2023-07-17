@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './_header.scss';
-import img from '../../assests/img.png';
-import logo from '../../assests/logo.jpg';
 import img2 from '../../assests/img2.jpg';
 import img3 from '../../assests/img3.jpg';
 import img4 from '../../assests/img4.jpg';
 
 const images = [
-  img,
-  logo,
   img2,
   img3,
   img4,
