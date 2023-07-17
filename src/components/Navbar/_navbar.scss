@@ -26,12 +26,11 @@
     .navbar-links-container {
       display: flex;
 
-      // margin-left: auto;
+      margin-left: auto;
 
       /* Navigation */
       .navigation {
         display: flex;
-        list-style: none;
         gap: 40px;
         margin-right: 120px;
       }
@@ -49,10 +48,8 @@
 
     .navbar-menu-container {
       position: absolute;
-      top: 70px;
-      right: 10px;
-      background-color: #333;
-      padding: 10px;
+      background-color: #973737;
+      padding: 15px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -70,20 +67,21 @@
       display: none;
     }
 
+    .navbar-links {
+      // display: none;
+
+      .navbar-links-container {
+        display: none;
+      }
+    }
+
     .navbar-menu {
       display: block;
     }
 
-    .navbar-menu-container {
-      position: absolute;
-      top: 70px;
-      right: 10px;
-      background-color: #333;
-      padding: 10px;
+    /* Show navbar menu container only when toggleMenu is true */
+    .navbar-menu-container.show {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
-      z-index: 1;
     }
   }
 }
