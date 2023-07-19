@@ -1,12 +1,18 @@
 import React from 'react'
 import Header from './Header'
-import Speakercontainer from '../../containers/Speakercontainer'
+import SpeakerContainer from './Speaker/Speakercontainer'
+import Message from './Message/Message'
+import SampleContainer from './Sample/SampleContainer'
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Speakercontainer />
+      <SpeakerContainer />
+      <Message />
+      <SampleContainer />
+
+
     </>
   )
 }

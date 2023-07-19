@@ -1,0 +1,64 @@
+.speaker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.speaker-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 20px;
+  gap: 50px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+  flex: 1 1 778px;
+}
+
+
+.speaker-image {
+  position: relative;
+display: inline-block;
+width: auto;
+border-radius: 10%;
+  img {
+
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .speaker-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.speaker-details {
+  flex: 1;
+}
+
+.speaker-quote {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.speaker-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.speaker-position {
+  font-size: 16px;
+  color: #666;
+}
