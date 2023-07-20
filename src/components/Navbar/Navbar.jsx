@@ -12,8 +12,12 @@ const Menu = () => (
       <Link to="/about">About</Link>
     </li>
     <li>
+      <Link to="/contact">Contact Us</Link>
+    </li>
+    <li>
       <Link to="/product">Product</Link>
     </li>
+
   </ul>
 );
 
