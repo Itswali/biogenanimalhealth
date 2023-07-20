@@ -63,3 +63,36 @@ padding: 20px 70px;
 border-radius: 40px;
 margin: 20px;
 }
+
+
+
+/* For screens with width up to 767px (mobile) */
+@media (max-width: 767px) {
+  .sample-container {
+    justify-content: flex-start; /* Align boxes to the left in mobile */
+  }
+
+  .button-self {
+    font-size: 16px; /* Decrease font size for mobile view */
+    padding: 12px 30px; /* Adjust padding for mobile view */
+  }
+
+  .sample-box {
+    width: calc(100% - 40px); /* Full width of the container minus margins */
+    margin: 10px; /* Reduce the margin for mobile view */
+  }
+}
+
+/* For screens with width between 768px and 991px (tablet) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .sample-box {
+    width: calc(50% - 40px); /* Two boxes per row */
+    margin: 10px; /* Reduce the margin for tablet view */
+  }
+
+  .button-self {
+    font-size: 16px; /* Decrease font size for tablet view */
+    padding: 16px 40px; /* Adjust padding for tablet view */
+  }
+
+}
