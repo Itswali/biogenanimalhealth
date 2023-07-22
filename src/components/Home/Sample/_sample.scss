@@ -2,30 +2,35 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 80px;
 }
 
 .sample-box {
   width: calc(30% - 40px);
   margin: 20px;
   border: 1px solid #ccc;
-  padding: 50px;
+  padding: 20px; /* Adjust padding for content alignment */
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+  border-radius: 4px;
 
-.sample-image {
-  object-fit: cover;
-  margin-bottom: 10px;
+  display: flex; /* Update to flex to center the image */
+  flex-direction: column;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
 
   img {
-    display: inline-block;
-max-width: 100%;
-  }
-  img:hover {
-    width: 200px;
-    height: 200px;
+    display: block;
+    width: 25%; /* Change to 100% to fill the container */
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
   }
 
+  &:hover img {
+    width: 26%;
+    height: auto;
+  }
 }
 
 .sample-name {
@@ -33,7 +38,7 @@ max-width: 100%;
   margin-bottom: 10px;
 }
 
-.sample-button button {
+.sample-button {
   padding: 8px 16px;
   background-color: #007bff;
   color: #fff;
@@ -41,30 +46,28 @@ max-width: 100%;
   border-radius: 4px;
 }
 
-.sample-button button:hover {
+.sample-button :hover {
   background-color: #0062cc;
+  padding: 5px;
 }
 
 .button-box {
   display: flex;
-  justify-content: center ;
+  justify-content: center;
 }
 
 .button-self {
-font-size: 18px;
-font-family: 'Roboto', sans-serif;
-background: #3e4095;
-line-height: 26px;
-color: #ffffff;
-font-weight: 400;
-border-radius: 30px;
-z-index: 1;
-padding: 20px 70px;
-border-radius: 40px;
-margin: 20px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  background: #3e4095;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 400;
+  border-radius: 30px;
+  z-index: 1;
+  padding: 20px 70px;
+  margin: 20px;
 }
-
-
 
 /* For screens with width up to 767px (mobile) */
 @media (max-width: 767px) {
@@ -94,5 +97,4 @@ margin: 20px;
     font-size: 16px; /* Decrease font size for tablet view */
     padding: 16px 40px; /* Adjust padding for tablet view */
   }
-
 }
