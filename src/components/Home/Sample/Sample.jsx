@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Sample = ({ image, name }) => (
 
@@ -8,7 +9,7 @@ const Sample = ({ image, name }) => (
       <h2 className="sample-name">{name}</h2>
     </div>
     <div className="sample-button">
-      <button>Read More</button>
+    <Link to={`/product/${name}`}>Read More</Link>
     </div>
   </div>
 

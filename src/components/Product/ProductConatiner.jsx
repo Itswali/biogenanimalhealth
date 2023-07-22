@@ -10,13 +10,12 @@ import sample6 from '../../assests/products/bronco.jpeg'
 import sample7 from '../../assests/products/floxicol.jpeg'
 import sample8 from '../../assests/products/eco-man.jpeg'
 import sample9 from '../../assests/products/ensol-ag.jpeg'
-import sample12 from '../../assests/products/trisol.jpeg'
 import sample13 from '../../assests/products/trisul.jpeg'
 
 import sample14 from '../../assests/products/tylo.jpeg'
-import sample10 from '../../assests/products/Biotak.jpeg'
 
-import sample11 from '../../assests/products/symodef.jpeg'
+import sample10 from '../../assests/products/symodef.jpeg'
+import sample11 from '../../assests/products/Biotak.jpeg'
 // import sample10 from '../../assests/products/floxicol.jpeg'
 
 
@@ -61,10 +60,6 @@ const ProductContainer = () => {
       name: "Ensol-AG",
     },
     {
-      image: sample12,
-      name: "Trisol",
-    },
-    {
       image: sample13,
       name: "Trisul-T",
     },
@@ -74,11 +69,11 @@ const ProductContainer = () => {
     },
     {
       image: sample10,
-      name: "Biotak",
+      name: "Symodef",
     },
     {
       image: sample11,
-      name: "Symodef",
+      name: "Biotak",
     },
   ];
 
