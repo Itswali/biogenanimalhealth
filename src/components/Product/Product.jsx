@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Product() {
-  return (
-    <div>
-      <h1> Product Page</h1>
+const Product = ({ image, name }) => (
+  <div className="product-box">
+    <img src={image} alt={name} className="product-image" />
+    <div className="product-details">
+      <h2 className="product-name">{name}</h2>
     </div>
-  )
-}
+    <div className="product-button">
+    <Link to={`/product/${name}`}>Read More</Link>
+    </div>
+  </div>
+);
+
+export default Product;

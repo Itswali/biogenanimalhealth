@@ -1,0 +1,75 @@
+// ContactUs.scss
+
+.contact-us {
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #333;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a img {
+      display: inline-block;
+      margin: 0 10px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+
+
+      &:hover {
+        width: 40px;
+        height: auto;
+      }
+    }
+  }
+}
+
+// Responsive styles for mobile and tablet modes
+@media screen and (max-width: 767px) {
+  .contact-us {
+    h2 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .social-media {
+      a img {
+        width: 34px;
+        height: 34px;
+
+        &:hover {
+          width: 38px;
+          height: auto;
+        }
+
+      }
+    }
+  }
+}

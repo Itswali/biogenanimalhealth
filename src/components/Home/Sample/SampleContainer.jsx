@@ -1,20 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Sample from "./Sample";
+import sample1 from '../../../assests/products/bromacid.jpeg'
+import sample2 from '../../../assests/products/symodef.jpeg'
+import sample3 from '../../../assests/products/lions moxin-c.jpeg'
 
 const SampleContainer = () => {
   const samples = [
     {
-      image: "http://absvet.org/images/thumbnails/EC%20Immune.png",
-      name: "Ec Immune",
+      image: sample1,
+      name: "Bromacid",
     },
     {
-      image: "http://absvet.org/images/thumbnails/Phyto-Sal.png",
-      name: "Phyto Sal",
+      image: sample2,
+      name: "Symodef",
     },
     {
-      image: "http://absvet.org/images/thumbnails/Apsure%20.png",
-      name: "Apsure",
+      image: sample3,
+      name: "Lions Moxin-C",
     },
   ];
 

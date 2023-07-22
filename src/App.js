@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Product from './components/Product/Product';
+import ProductContainer from './components/Product/ProductConatiner';
 import Navbar from './components/Navbar/Navbar';
-import ContactUs from './components/Contact/ContactUs'
 import './style/style.scss'
+import ProductDetail from './components/Product/ProductDetail';
 
 export default function App() {
   return (
@@ -14,8 +14,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/product" element={<ProductContainer />} />
+        <Route path="/product/:id" component={ProductDetail} />
       </Routes>
     </BrowserRouter>
   );
