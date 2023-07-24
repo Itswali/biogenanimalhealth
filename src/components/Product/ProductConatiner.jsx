@@ -1,87 +1,92 @@
 import React from "react";
 import Product from "./Product";
-import sample1 from '../../assests/products/bromacid.jpeg'
-import sample2 from '../../assests/products/tribiotic.jpeg'
-import sample3 from '../../assests/products/lions moxin-c.jpeg'
+import product1 from '../../assests/products/bromacid.jpeg'
+import product2 from '../../assests/products/tribiotic.jpeg'
+import product3 from '../../assests/products/lions moxin-c.jpeg'
 
-import sample4 from '../../assests/products/colistin.jpeg'
-import sample5 from '../../assests/products/b-g aspro-c.jpeg'
-import sample6 from '../../assests/products/bronco.jpeg'
-import sample7 from '../../assests/products/floxicol.jpeg'
-import sample8 from '../../assests/products/eco-man.jpeg'
-import sample9 from '../../assests/products/ensol-ag.jpeg'
-import sample13 from '../../assests/products/trisul.jpeg'
+import product4 from '../../assests/products/colistin.jpeg'
+import product5 from '../../assests/products/b-g aspro-c.jpeg'
+import product6 from '../../assests/products/bronco.jpeg'
+import product7 from '../../assests/products/floxicol.jpeg'
+import product8 from '../../assests/products/eco-man.jpeg'
+import product9 from '../../assests/products/ensol-ag.jpeg'
+import product13 from '../../assests/products/trisul.jpeg'
 
-import sample14 from '../../assests/products/tylo.jpeg'
+import product14 from '../../assests/products/tylo.jpeg'
 
-import sample10 from '../../assests/products/symodef.jpeg'
-import sample11 from '../../assests/products/Biotak.jpeg'
-// import sample10 from '../../assests/products/floxicol.jpeg'
+import product10 from '../../assests/products/symodef.jpeg'
+import product11 from '../../assests/products/Biotak.jpeg'
+import { Link } from "react-router-dom";
 
 
 
 
 const ProductContainer = () => {
-  const samples = [
+  const products = [
     {
-      image: sample1,
+      image: product1,
       name: "Bromacid",
     },
     {
-      image: sample2,
+      image: product2,
       name: "Tribiotic",
     },
     {
-      image: sample3,
+      image: product3,
       name: "Lions Moxin-C",
     },
     {
-      image: sample4,
+      image: product4,
       name: "Colistin",
     },
     {
-      image: sample5,
+      image: product5,
       name: "B G Aspro-C",
     },
     {
-      image: sample6,
+      image: product6,
       name: "Bronco",
     },
     {
-      image: sample7,
+      image: product7,
       name: "Floxicol",
     },
     {
-      image: sample8,
+      image: product8,
       name: "Eco-Main",
     },
     {
-      image: sample9,
+      image: product9,
       name: "Ensol-AG",
     },
     {
-      image: sample13,
+      image: product13,
       name: "Trisul-T",
     },
     {
-      image: sample14,
+      image: product14,
       name: "Tylo",
     },
     {
-      image: sample10,
+      image: product10,
       name: "Symodef",
     },
     {
-      image: sample11,
+      image: product11,
       name: "Biotak",
     },
   ];
 
   return (
     <>
-      <div className="product-container">
-        {samples.map((sample, index) => (
-          <Product key={index} image={sample.image} name={sample.name} />
+      <div className="product-wrapper">
+        {products.map((product, index) => (
+          <div key={index} className="product-container">
+            <Product image={product.image} name={product.name} />
+            <div className="product-button">
+            <Link to={`/product/${product.name}`}>Read More</Link>
+            </div>
+          </div>
         ))}
       </div>
     </>
@@ -89,3 +94,4 @@ const ProductContainer = () => {
 };
 
 export default ProductContainer;
+

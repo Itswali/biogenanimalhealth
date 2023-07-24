@@ -5,7 +5,7 @@ import About from './components/About/About';
 import ProductContainer from './components/Product/ProductConatiner';
 import Navbar from './components/Navbar/Navbar';
 import './style/style.scss'
-import ProductDetail from './components/Product/ProductDetail';
+import ProductDetailPage from './components/Product/ProductDetailPage';
 
 export default function App() {
   return (
@@ -15,7 +15,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/product" element={<ProductContainer />} />
-        <Route path="/product/:id" component={ProductDetail} />
+        <Route path="/product/:name" element={<ProductDetailPage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,5 +1,6 @@
+// ProductContainer.scss
 
-.product-container {
+.product-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -7,7 +8,11 @@
   padding-bottom: 100px;
 }
 
-.product-box {
+.image-container {
+  display: grid;
+  place-items: center;
+}
+.product-container {
   width: calc(30% - 40px);
   margin: 20px;
   border: 1px solid #ccc;
@@ -15,63 +20,56 @@
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-
   display: flex; /* Update to flex to center the image */
   flex-direction: column;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically and horizontally */
+  justify-content: center;
   background-blend-mode: multiply;
 
   img {
     display: block;
-    width: 25%; /* Change to 100% to fill the container */
+    width: 25%; /* Fill the container */
     height: auto;
     object-fit: cover;
     margin-bottom: 10px;
     background-blend-mode: multiply;
-
   }
 
+  .product-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .product-button {
+    padding: 8px 16px;
+    background-color: #454995;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #454995;
+      padding: 5px;
+    }
+  }
 }
 
-.product-name {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.product-button {
-  padding: 8px 16px;
-  background-color: #454995;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-}
-
-.product-button :hover {
-  background-color: #454995;
-  padding: 5px;
-}
-
-
-/* For screens with width up to 767px (mobile) */
+// For screens with width up to 767px (mobile)
 @media (max-width: 767px) {
-  .product-container {
+  .product-wrapper {
     justify-content: flex-start; /* Align boxes to the left in mobile */
   }
 
-
-  .product-box {
+  .product-container {
     width: calc(100% - 40px); /* Full width of the container minus margins */
     margin: 10px; /* Reduce the margin for mobile view */
   }
 }
 
-/* For screens with width between 768px and 991px (tablet) */
+// For screens with width between 768px and 991px (tablet)
 @media (min-width: 768px) and (max-width: 991px) {
-  .product-box {
+  .product-container {
     width: calc(50% - 40px); /* Two boxes per row */
     margin: 10px; /* Reduce the margin for tablet view */
   }
-
-
 }
