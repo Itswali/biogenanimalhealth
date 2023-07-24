@@ -2,12 +2,12 @@
 @import url(../components/Navbar/_navbar.scss);
 @import url(../components/Home/_header.scss);
 @import url(../components/Home/Speaker/_speaker.scss);
-// @import url(../components//Home//Message/_message.scss);
 @import url(../components/Home/Footer/_footer.scss);
 @import url(../components/Home/Sample/_sample.scss);
 @import url(../components/About/_about.scss);
 @import url(../components/Home/Contact/_contactus.scss);
 @import url(../components/Product/_product.scss);
+@import url(../components/Home/Message/_message.scss);
 
 :root {
   --font-family: 'Manrope', sans-serif;
@@ -31,8 +31,10 @@ h1 {
 }
 
 body {
-  height: 100vh;
+  // height: 100vh;
   color: #615e5d;
+  background-image: url('../assests/backwall.jpg');
+
 }
 
 a {

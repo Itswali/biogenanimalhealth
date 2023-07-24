@@ -1,8 +1,8 @@
-// SpeakerContainer.scss
+// messageContainer.scss
 
-.speaker-container {
+.message-container {
   padding: 20px;
-  margin-bottom: 50px;
+  border-top: 1px solid black;
 
   h1 {
     font-size: 26px;
@@ -17,7 +17,7 @@
     margin-bottom: 5px;
   }
 
-  .speaker-message {
+  .message-message {
     /* Add styling for the message area */
     border: 1px solid #ccc;
     padding: 20px;
@@ -53,4 +53,4 @@
   }
 }
 
-/* Additional styling for the Speaker component */
+/* Additional styling for the message component */

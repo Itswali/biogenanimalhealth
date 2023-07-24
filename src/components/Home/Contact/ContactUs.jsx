@@ -6,7 +6,7 @@ import twitter from '../../../assests/twitter.svg';
 
 export default function ContactUs() {
   return (
-    <div className="contact-us">
+    <div className="contact-us" id="contact">
       <h2>Animal Health Livestock Product Line</h2>
       <h3>Contact Us</h3>
       <p>Help line: 0332-1999 682</p>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assests/logo.jpeg';
+import logo from '../../assests/logo.png';
 import { Link } from 'react-router-dom';
 
 const Menu = () => (
@@ -9,12 +9,14 @@ const Menu = () => (
       <Link to="/">Home</Link>
     </li>
     <li>
+      <Link to="/product">Product</Link>
+    </li>
+    <li>
       <Link to="/about">About</Link>
     </li>
     <li>
-      <Link to="/product">Product</Link>
+      <Link to="/#contact">Contact</Link>
     </li>
-
   </ul>
 );
 
@@ -32,13 +34,8 @@ export default function Navbar() {
         </div>
       </div>
       <div className="navbar-menu">
-        {toggleMenu ? (
-          <RiCloseLine
-            color="#fff"
-            size={27}
-            onClick={() => setToggleMenu(false)}
-          />
-        ) : (
+        {/* Show the open button only if the mobile menu is closed */}
+        {!toggleMenu && (
           <RiMenu3Line
             color="#fff"
             size={27}
@@ -47,6 +44,13 @@ export default function Navbar() {
         )}
         {toggleMenu && (
           <div className="navbar-menu-container scale-up-center">
+            {/* Close button inside the .navbar-menu-container */}
+            <div
+              className="navbar-menu-close-button"
+              onClick={() => setToggleMenu(false)}
+            >
+              <RiCloseLine color="#fff" size={27} />
+            </div>
             <div className="navbar-menu-container-links">
               <Menu />
             </div>
@@ -56,3 +60,5 @@ export default function Navbar() {
     </div>
   );
 }
+
+
