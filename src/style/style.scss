@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-@import url(../components/Navbar/_navbar.scss);
-@import url(../components/Home/_header.scss);
-@import url(../components/Home/Speaker/_speaker.scss);
+// @import url(../components/Navbar/_navbar.scss);
+// @import url(../components/Home/_header.scss);
 @import url(../components/Home/Footer/_footer.scss);
 @import url(../components/Home/Sample/_sample.scss);
 @import url(../components/About/_about.scss);
 @import url(../components/Home/Contact/_contactus.scss);
 @import url(../components/Product/_product.scss);
 @import url(../components/Product/_detail.scss);
-@import url(../components/Home/Message/_message.scss);
 
 :root {
   --font-family: 'Manrope', sans-serif;
@@ -16,11 +14,6 @@
 
 li {
   list-style: none;
-}
-
-h1 {
-  color: antiquewhite;
-  text-align: center;
 }
 
 * {
@@ -31,12 +24,6 @@ h1 {
   font-family: var(--font-family);
 }
 
-body {
-  // height: 100vh;
-  color: #615e5d;
-  background-image: url('../assests/backwall.jpg');
-
-}
 
 a {
   color: unset;

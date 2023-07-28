@@ -1,16 +1,14 @@
-// message.js
+import React from 'react';
+import './Message.scss';
 
-import React from "react";
-
-const Message = ({ msg, msg1 }) => (
-  <div className="message">
-    <div className="message-box">
-      <div className="message-details">
-        <h3 className="message-quote item">{msg}</h3>
-        <h3 className="message-quote item">{msg1}</h3>
-      </div>
+export default function Message() {
+  return (
+    <div className="msg-container">
+      <h1>Bio Gen Animal Health</h1>
+      <hr />
+      <p>Biogen Animal Health was established in 2023, at Rawalpindi, foundation was laid by Mr. Ishtiaq Ahmed (Managing Director) & Tariq Mehmood Mirza. Due to a long lasting relationship of its team with the veterinary pharmaceutical market,</p>
+      <p>Biogen Pharma never stopped to explore the diversified market requirement in Pakistan and in abroad.</p>
+      <p> It’s the vision of the expert management of Biogen Animal Health that enabled it to cover all the major areas of Animal Health within a very short span of time. </p>
     </div>
-  </div>
-);
-
-export default Message;
+  )
+}

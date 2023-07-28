@@ -1,0 +1,58 @@
+/* Common styles for both desktop and responsive modes */
+.image-with-text {
+  height: 100%;
+  margin-top: 50px;
+  height: 600px; /* Set an appropriate height for your component */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+
+ h1 {
+  color: white;
+  font-size: 4.5em;
+  line-height: 1;
+  margin-bottom: 20px;
+  font-family: 'Circular-book';
+}
+ p {
+  font-size: 2.5em;
+  color: white;
+  max-width: 60%;
+}
+}
+
+/* Responsive styles for tablet */
+@media only screen and (max-width: 768px) {
+  .image-with-text h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+  }
+
+  .image-with-text p {
+    font-size: 2em;
+    max-width: 80%;
+  }
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 480px) {
+  .image-with-text {
+    min-height: 500px;
+    padding: 30px 0;
+  }
+
+  .image-with-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  .image-with-text p {
+    font-size: 1.8em;
+    max-width: 100%;
+  }
+}

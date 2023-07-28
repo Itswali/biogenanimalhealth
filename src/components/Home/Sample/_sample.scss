@@ -46,23 +46,6 @@
   padding: 5px;
 }
 
-.button-box {
-  display: flex;
-  justify-content: center;
-}
-
-.button-self {
-  font-size: 18px;
-  font-family: 'Roboto', sans-serif;
-  background: #3e4095;
-  line-height: 26px;
-  color: #ffffff;
-  font-weight: 400;
-  border-radius: 30px;
-  z-index: 1;
-  padding: 20px 70px;
-  margin: 20px;
-}
 
 /* For screens with width up to 767px (mobile) */
 @media (max-width: 767px) {

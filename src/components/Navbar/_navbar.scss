@@ -5,6 +5,7 @@
   padding: 1rem 10%;
   padding-bottom: 2rem;
   position: relative;
+  // background-color: #98FB98;
 }
 
 /* Navbar links */
@@ -27,18 +28,18 @@
   /* Navbar links container */
   .navbar-links-container {
     display: flex;
-    margin-left: 15%;
+    margin-left: 18%;
 
     /* Navigation */
     .navigation {
       display: flex;
       font-size: 24px;
-      color: #454995;
+      color: #fff;
       gap: 30px;
       font-weight: 500;
 
       :hover {
-        font-size: 27px;
+        font-size: 25px;
         font-weight: 600;
       }
     }
@@ -49,7 +50,6 @@
 .navbar-menu {
   display: none;
   align-items: center;
-  background-color: #454995;
 
   svg {
     cursor: pointer;
@@ -57,43 +57,60 @@
 }
 
 /* Toggle menu container (for mobile) */
+/* Navbar menu container */
 .navbar-menu-container {
-  background-color: #454995;
-  mix-blend-mode: multiply;
-  // backdrop-filter: blur(1px);
+  // display: block;
   position: fixed;
-  left: 0;
   top: 0;
+  right: 0px;
   bottom: 0;
-  right: 0;
-  z-index: 1;
-}
-
-/* Navbar menu links (for mobile) */
-.navbar-menu-container-links {
-  display: flex;
-  flex-direction: column;
-  padding-top: 106px;
-  padding-left: 28px;
-  gap: 40px;
+  width: 300px;
+  background-color: #efefef;
+  border-left: 6px solid #6e2589;
+  z-index: 20;
+  transition: left 0.3s ease;
+  /* Apply the transition effect for 'left' property */
 
 
-
-  .navigation {
+  /* Navbar menu links (for mobile) */
+  .navbar-menu-container-links {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    gap: 20px;
 
-    li {
-      color: #fff;
-      font-size: 34px;
-      font-weight: 800;
-      line-height: 44px;
+
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 12px;
+      margin-top: 100px;
+
+      li {
+        background-color: #fff;
+        color: #6e2585;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 40px;
+        border-bottom: 1.5px dashed #989898;
+      }
+
+      /* Style for hovered links */
+      li:hover {
+        background-color: #6e2585;
+        color: #fff;
+      }
+
+      /* Style for active links */
+      li.active {
+        background-color: #6e2585;
+        color: #fff;
+      }
 
     }
+
   }
 }
+
 
 .navbar-menu-close-button {
   color: #fff;

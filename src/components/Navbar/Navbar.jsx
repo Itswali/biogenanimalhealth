@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assests/logo.png';
+import './_navbar.scss';
 import { Link } from 'react-router-dom';
 
 const Menu = () => (
@@ -49,7 +50,7 @@ export default function Navbar() {
               className="navbar-menu-close-button"
               onClick={() => setToggleMenu(false)}
             >
-              <RiCloseLine color="#fff" size={27} />
+              <RiCloseLine color="#000" size={28} />
             </div>
             <div className="navbar-menu-container-links">
               <Menu />

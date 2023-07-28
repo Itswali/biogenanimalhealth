@@ -17,6 +17,7 @@ import product14 from '../../assests/products/tylo.jpeg'
 import product10 from '../../assests/products/symodef.jpeg'
 import product11 from '../../assests/products/Biotak.jpeg'
 import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 
 
@@ -79,6 +80,7 @@ const ProductContainer = () => {
 
   return (
     <>
+    <Navbar />
       <div className="product-wrapper">
         {products.map((product, index) => (
           <div key={index} className="product-container">
@@ -89,6 +91,7 @@ const ProductContainer = () => {
           </div>
         ))}
       </div>
+      <footer />
     </>
   );
 };
