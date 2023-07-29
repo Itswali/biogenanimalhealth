@@ -5,6 +5,7 @@ import Head from './Head'
 import Mission from './Mission'
 import Message from './Message/Message'
 import Range from './Range/Range'
+import P from './P'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Message />
       <Mission />
       <Range />
+      <P />
       <ContactUs />
       <Footer />
 
