@@ -1,23 +1,22 @@
 import React from "react";
 import Product from "./Product";
-import product1 from '../../assests/products/bromacid.jpeg'
-import product2 from '../../assests/products/tribiotic.jpeg'
-import product3 from '../../assests/products/lions moxin-c.jpeg'
+import product1 from '../../assests/products/Bromacid.png'
+import product2 from '../../assests/products/Tribiotic.png'
+import product3 from '../../assests/products/LIONS MOXIN-C.png'
 
-import product4 from '../../assests/products/colistin.jpeg'
-import product5 from '../../assests/products/b-g aspro-c.jpeg'
-import product6 from '../../assests/products/bronco.jpeg'
-import product7 from '../../assests/products/floxicol.jpeg'
-import product8 from '../../assests/products/eco-man.jpeg'
-import product9 from '../../assests/products/ensol-ag.jpeg'
-import product13 from '../../assests/products/trisul.jpeg'
+import product4 from '../../assests/products/COLISTIN.png'
+import product5 from '../../assests/products/B-G Aspro-C.png'
+import product6 from '../../assests/products/BRONCO-CTC.png'
+import product7 from '../../assests/products/FLOXICOL.png'
+import product8 from '../../assests/products/ECO-MAN.png'
+import product9 from '../../assests/products/ENSOL-AG.png'
+import product13 from '../../assests/products/TRISUL-T.png'
 
-import product14 from '../../assests/products/tylo.jpeg'
+import product14 from '../../assests/products/Tylo-200.png'
 
-import product10 from '../../assests/products/symodef.jpeg'
-import product11 from '../../assests/products/Biotak.jpeg'
+import product10 from '../../assests/products//Symodex.png'
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
+import Nav from "../Nav/Nav";
 
 
 
@@ -72,18 +71,14 @@ const ProductContainer = () => {
       image: product10,
       name: "Symodef",
     },
-    {
-      image: product11,
-      name: "Biotak",
-    },
   ];
 
   return (
     <>
-    <Navbar />
+    <Nav />
       <div className="product-wrapper">
         {products.map((product, index) => (
-          <div key={index} className="product-container">
+          <div key={index} className="product-containr">
             <Product image={product.image} name={product.name} />
             <div className="product-button">
             <Link to={`/product/${product.name}`}>Read More</Link>

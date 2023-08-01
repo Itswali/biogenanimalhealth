@@ -1,23 +1,22 @@
 import React from "react";
-// import Product from "../Product/Product";
-import product1 from "../../assests/products/bromacid.jpeg";
-import product2 from '../../assests/products/tribiotic.jpeg'
-import product3 from '../../assests/products/lions moxin-c.jpeg'
+import product1 from "../../assests/products/Bromacid.png";
+import product2 from '../../assests/products/Tribiotic.png'
+import product3 from '../../assests/products/LIONS MOXIN-C.png'
 
-import product4 from '../../assests/products/colistin.jpeg'
-import product5 from '../../assests/products/b-g aspro-c.jpeg'
-import product6 from '../../assests/products/bronco.jpeg'
-import product7 from '../../assests/products/floxicol.jpeg'
-import product8 from '../../assests/products/eco-man.jpeg'
-import product9 from '../../assests/products/ensol-ag.jpeg'
-import product13 from '../../assests/products/trisul.jpeg'
-import product14 from '../../assests/products/tylo.jpeg'
+import product4 from '../../assests/products/COLISTIN.png'
+import product5 from '../../assests/products/B-G Aspro-C.png'
+import product6 from '../../assests/products/BRONCO-CTC.png'
+import product7 from '../../assests/products/FLOXICOL.png'
+import product8 from '../../assests/products/ECO-MAN.png'
+import product9 from '../../assests/products/ENSOL-AG.png'
+import product13 from '../../assests/products/TRISUL-T.png'
+import product14 from '../../assests/products/Tylo-200.png'
 
-import product10 from '../../assests/products/symodef.jpeg'
+import product10 from '../../assests/products/Symodex.png'
 import btn from "../../assests/arrow.png";
 import { useRef } from "react";
 import "./P.scss";
-// import Pp from "./Pp";
+import { Link } from "react-router-dom";
 
 const P = () => {
   const products = [
@@ -99,7 +98,8 @@ const P = () => {
           <div key={index} className="product-card">
             <div className="product-image">
               <img src={product.image} className="product-thumb" alt="" />
-              <button className="card-btn">See More</button>
+              {/* <button className="card-btn">See More</button> */}
+              <Link className="card-btn" to={`/product/${product.name}`}>Read More</Link>
             </div>
             <div className="product-info">
               <h2 className="product-brand">{product.name}</h2>
