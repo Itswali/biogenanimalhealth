@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from '../Navbar/Navbar';
 import Header from './Header';
 import './_header.scss';
+import Nav from '../Nav/Nav';
 
 export default function Head() {
   const [backgroundImage, setBackgroundImage] = useState(0);
@@ -25,7 +25,7 @@ export default function Head() {
       style={{ backgroundImage: `url(${imageUrls[backgroundImage]})` }}
     >
       <div className="slider-bg">
-        <Navbar />
+        <Nav />
         <Header backgroundImageIndex={backgroundImage} />
       </div>
     </div>

@@ -15,9 +15,9 @@ const Menu = () => (
     <li>
       <Link to="/about">About</Link>
     </li>
-    <li>
+    {/* <li>
       <Link to="/#contact">Contact</Link>
-    </li>
+    </li> */}
   </ul>
 );
 
@@ -38,7 +38,7 @@ export default function Nav() {
         {/* Show the open button only if the mobile menu is closed */}
         {!toggleMenu && (
           <RiMenu3Line
-            color="#fff"
+            color="#000"
             size={27}
             onClick={() => setToggleMenu(true)}
           />

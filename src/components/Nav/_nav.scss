@@ -2,10 +2,11 @@
 .nav {
   display: flex;
   align-items: center;
-  padding: 1rem 10%;
-  padding-bottom: 2rem;
+  padding: 10px;
+  padding-left: 10%;
+  // padding-bottom: 2rem;
   position: relative;
-  background-color: #98FB98;
+  background-color: #fff;
 }
 
 /* nav links */
@@ -33,15 +34,11 @@
     /* Navigation */
     .navigation {
       display: flex;
-      font-size: 24px;
+      font-size: 21px;
       color: #6e2585;
       gap: 30px;
-      font-weight: 500;
+      font-weight: 800;
 
-      :hover {
-        font-size: 25px;
-        font-weight: 600;
-      }
     }
   }
 }
@@ -65,7 +62,7 @@
   right: 0px;
   bottom: 0;
   width: 300px;
-  background-color: #efefef;
+  background-color: #98FB98;
   border-left: 6px solid #6e2589;
   z-index: 20;
   transition: left 0.3s ease;
@@ -86,7 +83,7 @@
       margin-top: 100px;
 
       li {
-        background-color: #fff;
+        // background-color: #fff;
         color: #6e2585;
         font-size: 28px;
         font-weight: 600;

@@ -90,16 +90,14 @@ const P = () => {
       <button className="pre-btn" onClick={() => handleScroll("left")}>
         <img src={btn} alt="Previous" />
       </button>
-      <button className="nxt-btn" onClick={() => handleScroll("right")}>
-        <img src={btn} alt="Next" />
-      </button>
       <div ref={productContainerRef} className="product-container">
         {products.map((product, index) => (
           <div key={index} className="product-card">
             <div className="product-image">
               <img src={product.image} className="product-thumb" alt="" />
-              {/* <button className="card-btn">See More</button> */}
-              <Link className="card-btn" to={`/product/${product.name}`}>Read More</Link>
+              <Link className="p-btn" to={`/product/${product.name}`}>
+                Read More
+              </Link>
             </div>
             <div className="product-info">
               <h2 className="product-brand">{product.name}</h2>
@@ -107,9 +105,15 @@ const P = () => {
           </div>
         ))}
       </div>
+      <button className="nxt-btn" onClick={() => handleScroll("right")}>
+        <img src={btn} alt="Next" />
+      </button>
     </section>
   );
 };
 
 export default P;
+
+
+
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Product from "./Product";
 import product1 from '../../assests/products/Bromacid.png'
 import product2 from '../../assests/products/Tribiotic.png'
@@ -73,21 +73,45 @@ const ProductContainer = () => {
     },
   ];
 
+
+  const [searchInput, setSearchInput] = useState("");
+  const [filteredProducts, setFilteredProducts] = useState(products);
+
+  const handleSearchChange = (event) => {
+    const input = event.target.value;
+    setSearchInput(input);
+
+    // Filter the products based on the search input
+    const filtered = products.filter(
+      (product) =>
+        product.name.toLowerCase().includes(input.toLowerCase())
+    );
+    setFilteredProducts(filtered);
+  };
+
   return (
-    <>
-    <Nav />
+    <section className="product-main">
+      <Nav />
+      <div className="search-box">
+        <input
+          type="text"
+          placeholder="Search for a medicine..."
+          value={searchInput}
+          onChange={handleSearchChange}
+        />
+        <button className="search">Search</button>
+      </div>
       <div className="product-wrapper">
-        {products.map((product, index) => (
+        {filteredProducts.map((product, index) => (
           <div key={index} className="product-containr">
             <Product image={product.image} name={product.name} />
             <div className="product-button">
-            <Link to={`/product/${product.name}`}>Read More</Link>
+              <Link to={`/product/${product.name}`}>Read More</Link>
             </div>
           </div>
         ))}
       </div>
-      <footer />
-    </>
+    </ section>
   );
 };
 

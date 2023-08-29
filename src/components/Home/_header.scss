@@ -3,7 +3,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
-  border-radius: 90% / 0 0 20% 20%;
+  border-radius: 95% / 0 0 15% 15%;
   overflow: hidden;
   transition: background-image 0.9s ease;
 }
@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   z-index: 2;
-  height: 900px;
+  height: 1000px;
   background: -moz-linear-gradient(45deg, rgb(37, 162, 219) 0%, rgba(110, 37, 133, 0.1) 100%);
   background: -webkit-linear-gradient(45deg, rgb(37, 162, 219) 0%, rgba(110, 37, 133, 0.1) 100%);
 }
@@ -39,7 +39,7 @@
 /* Responsive styles for tablet */
 @media only screen and (max-width: 768px) {
   .slider-home .slider-bg {
-    height: 600px;
+    height: 900px;
   }
 
   .header {
@@ -56,7 +56,7 @@
 /* Responsive styles for mobile */
 @media only screen and (max-width: 480px) {
   .slider-home .slider-bg {
-    height: 400px;
+    height: 800px;
   }
 
   .header {

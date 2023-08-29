@@ -1,20 +1,57 @@
-// ProductContainer.scss
-
 .product-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 20px;
   padding-bottom: 100px;
+}
+
+/* Style for the search box */
+.search-box {
+  display: flex;
+  margin: 20px; /* Increase the margin to add some spacing */
+  padding: 10px;
+  width: 100%; /* Use full width on mobile and tablet */
+  max-width: 350px; /* Add a max-width to limit the search box width */
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  margin-left: 70%;
+}
+
+/* Style for the search input */
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+/* Style for the search button */
+.search {
+  background-color: #6e2585;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Add hover effect for the search button */
+.search:hover {
+  background-color: #4c1665;
 }
 
 .image-container {
   display: grid;
   place-items: center;
 }
+
+/* Updated style for the product container */
 .product-containr {
-  width: calc(30% - 40px);
-  margin: 20px;
+  width: calc(33% - 40px); /* Two boxes per row */ /* Use full width on mobile and tablet */
+  margin: 20px; /* Add some spacing */
   border: 1px solid #ccc;
   padding: 20px; /* Adjust padding for content alignment */
   text-align: center;
@@ -28,7 +65,8 @@
 
   img {
     display: block;
-    width: 45%; /* Fill the containr */
+    width: 100%; /* Adjust the image size for better visibility on mobile and tablet */
+    max-width: 200px; /* Add a max-width to limit the image size */
     height: auto;
     object-fit: cover;
     margin-bottom: 10px;
@@ -46,30 +84,39 @@
     border-radius: 4px;
 
     &:hover {
-      background: #6E2585;
+      background: #6e2585;
       color: #fff;
     }
   }
 }
 
-
-
-// For screens with width up to 767px (mobile)
-@media (max-width: 767px) {
-  .product-wrapper {
-    justify-content: flex-start; /* Align boxes to the left in mobile */
-  }
-
-  .product-containr {
-    width: calc(100% - 40px); /* Full width of the containr minus margins */
-    margin: 10px; /* Reduce the margin for mobile view */
+@media (max-width: 1200px) {
+  .search-box {
+    margin-left: 60%;
   }
 }
 
-// For screens with width between 768px and 991px (tablet)
+/* For screens with width up to 767px (mobile) */
+@media (max-width: 767px) {
+  .search-box {
+    margin: 10px; /* Reduce the margin for mobile view */
+    // margin-left: 30%;
+  }
+
+  .product-containr {
+    width: 100%;
+    // margin: 10px; /* Reduce the margin for tablet view */
+  }
+
+}
+
+/* For screens with width between 768px and 991px (tablet) */
 @media (min-width: 768px) and (max-width: 991px) {
-  .product-container {
+  .product-containr {
     width: calc(50% - 40px); /* Two boxes per row */
     margin: 10px; /* Reduce the margin for tablet view */
+  }
+  .search-box {
+    margin-left: 55%;
   }
 }
